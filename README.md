@@ -43,7 +43,12 @@
 * ./升级脚本名字 img固件名
 
 # 插件包括
-![插件列表](https://cdn.jsdelivr.net/gh/Netflixxp/N1HK1dabao/img/lb.png)
+![插件列表](https://cdn.jsdelivr.net/gh/wxfyes/x86openwrt/img/l.png)
+![插件列表](https://cdn.jsdelivr.net/gh/wxfyes/x86openwrt/img/2.png)
+![插件列表](https://cdn.jsdelivr.net/gh/wxfyes/x86openwrt/img/3.png)
+![插件列表](https://cdn.jsdelivr.net/gh/wxfyes/x86openwrt/img/4.png)
+![插件列表](https://cdn.jsdelivr.net/gh/wxfyes/x86openwrt/img/5.png)
+![插件列表](https://cdn.jsdelivr.net/gh/wxfyes/x86openwrt/img/6.png)
 * SSR-Plus
 * passwall
 * openclash
