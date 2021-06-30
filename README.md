@@ -18,10 +18,12 @@ N1已支持一键在线升级openwrt和内核！升级方式见下方，目前�
 总结一句话：**追新有风险、更新须谨慎**
 
 # +和+o的版本区别
-+的内核版本较新；+o的版本相对+的内核更稳定；f大不太建议N1等盒子使用+的版本，因此比较推荐使用+o的版本。
+* +的内核版本较新；
+* +o的版本相对+的内核更稳定；
+* f大不太建议N1等盒子使用+的版本，因此比较推荐使用+o的版本。
 
 
-此项目基于flippy的56+o打包N1和s905X3 （hk1等）的openwrt，为jcnf个人正在使用的固件版本。openwrt来自我自己的另一个项目[N1Openwrt](https://github.com/Netflixxp/op-)
+此项目基于flippy的56+o打包N1和s905X3 （hk1等）贝壳云的openwrt，为王晓峰个人正在使用的固件版本。openwrt来自我的另一个项目[N1Openwrt](https://github.com/wxfyes/N1packaging)
 
 # 默认IP及密码
 默认IP 192.168.1.1  密码 password
