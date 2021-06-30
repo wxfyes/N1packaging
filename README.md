@@ -1,4 +1,6 @@
 # 重要更新
+N1已支持一键在线升级openwrt和内核！升级方式见下方，目前已经实现同X86固件同样的web升级方式！更加简单快捷！
+
 2021年6月18日，上游大雕全面更新了最新代码，受影响，60+或60+o版本升级61版本的，建议重新安装，如果不想刷U盘全新安装，也可以用升级脚本升级，只是选择是否保存配置时，选“n”
 
 2021年6月6日，加入科学上网常用ipk输出Releases
@@ -8,7 +10,7 @@
 * 下载下面对应的IPK文件， 软路由后台-系统-文件传输-选择本地文件-选择ipk上传-上传文件列表-安装
 
 2021年5月24日，同步更新F大佬的快照功能
-![增加快照功能](https://cdn.jsdelivr.net/gh/Netflixxp/N1HK1dabao/img/kuazhao.jpg)
+![增加快照功能](https://cdn.jsdelivr.net/gh/wxfyes/N1packaging/img/kuazhao.jpg)
 
 使用方法：固件新刷入或采用新版的 update-xxx-openwrt.sh 脚本升级之后就具备了快照功能，工具包名称：由于取名困难，故采用了 flippy 为命令名称（/usr/sbin/flippy)，在ssh或ttyd下输入即可，全程中文菜单，全交互式操作。
 # 特别提醒
