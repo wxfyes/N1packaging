@@ -27,9 +27,9 @@ jobs:
       matrix:
         include:
           - flippy_name: 61+o
-            release_name: N1-wangxiaofeng-61+o.img
+            release_name: N1-wxf-61+o.img
           - flippy_name: 61+
-            release_name: N1-wangxiaofeng-61+.img
+            release_name: N1-wxf-61+.img
 
     env:
       FLIPPY_NAME: ${{ matrix.flippy_name }}   
