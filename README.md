@@ -37,7 +37,7 @@ N1已支持一键在线升级openwrt和内核！升级方式见下方，目前�
 
 # N1web在线升级方法
 * web在线快速升级，以此进入系统-晶晨宝盒-选择手动上传更新-上传最新下载的N1固件，最后点击升级openwrt固件即可
-* [升级方法](https://cdn.jsdelivr.net/gh/wxfyes/N1packaging/img/sj.png)
+* ![升级方法](https://cdn.jsdelivr.net/gh/wxfyes/N1packaging/img/sj.png)
 # N1 ssh后台升级法（较麻烦）
 * cd /mnt/mmcblk2p4
 * wget 升级脚本下载.sh后缀文件 [点这里跳转](https://github.com/wxfyes/N1packaging/releases)
