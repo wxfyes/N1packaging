@@ -28,7 +28,7 @@ N1已支持一键在线升级openwrt和内核！升级方式见下方，目前�
 
 # N1全新安装
 * 下载对应版本固件
-![固件链接地址](https://cdn.jsdelivr.net/gh/Netflixxp/N1HK1dabao/img/sj.png)
+![固件链接地址](https://cdn.jsdelivr.net/gh/wxfyes/N1packaging/img/3.png)
 * 将固件写入U盘或TF卡 推荐写盘软件 [rufu](https://rufus.ie/zh/)或者[balenaEtcher](balena.io/etcher/)任选其一
 * 插入U盘启动盒子，输入192.168.1.1进入后台
 * 在系统——TTYD终端——输入用户名root；密码password
@@ -41,8 +41,8 @@ N1已支持一键在线升级openwrt和内核！升级方式见下方，目前�
 # N1 ssh后台升级法（较麻烦）
 * cd /mnt/mmcblk2p4
 * wget 升级脚本下载.sh后缀文件 [点这里跳转](https://github.com/wxfyes/N1packaging/releases)
-![固件链接地址](https://cdn.jsdelivr.net/gh/Netflixxp/N1HK1dabao/img/zx.png)
-* wget .gz后缀名的固件链接,鼠标右击后缀.gz文件获取链接地址 [点这里跳转](https://github.com/Netflixxp/N1HK1dabao/releases)
+![固件链接地址](https://cdn.jsdelivr.net/gh/wxfyes/N1packaging/img/2.png)
+* wget .gz后缀名的固件链接,鼠标右击后缀.gz文件获取链接地址 [点这里跳转](https://github.com/wxfyes/N1packaging/releases)
 * gzip -d 上一步下载的固件全名
 * chmod +x *.sh
 * ./升级脚本名字 img固件名
@@ -61,17 +61,27 @@ N1已支持一键在线升级openwrt和内核！升级方式见下方，目前�
 * Bypass
 * Argon主題 
 * docker-ce
+* dockerman
+* 晶晨宝盒（web升级）
 * AdGuard Home
+* smartdns
 * 实时监控
 * TTYD终端
 * 动态DNS
 * UPdp
-* AdGuard Home
 * 网易音乐解锁
 * 京东薅羊毛
-* Frp
+* Frp内网穿透
+* Frps
 * 无线wifi
 * CPU性能调节
+* sfe加速
+* Flow加速
+* 多线多播
+* 可道云
+* transmission
+* NFS管理
+* qBittorrent
 
 # 自动更新说明
 固件采用自动编译，Acrions将会在每天监控上游代码是否更新，如passwall ssrp等，一旦检测到上游代码更加将会自动编译打包，于每天上午7时30分发布最新版固件。
@@ -83,10 +93,10 @@ N1已支持一键在线升级openwrt和内核！升级方式见下方，目前�
   dd   if=/dev/zero   of=/dev/mmcblk2  bs=512  count=1  &&  sync
 ```
 
-# [购买奈飞正规合租车](https://www.vip6.pro/?uid=IwUL03C37v90/#/)
+# [购买奈飞正规合租车](https://wxf2088.ml/Netfix)
 
 # 感谢
- * [flippy](https://www.right.com.cn/forum/space-uid-285101.html)提供内核
+ * [flippy](https://github.com/unifreq)提供内核
  * [coolsnowwolf/Lede](https://github.com/coolsnowwolf/lede)提供源码
  * [mingxiaoyu](https://github.com/mingxiaoyu)提供自动编译脚本
  * [hibuddies](https://github.com/hibuddies/openwrt/)提供源码
