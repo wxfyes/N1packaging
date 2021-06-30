@@ -35,9 +35,12 @@ N1已支持一键在线升级openwrt和内核！升级方式见下方，目前�
 * 输入安装命令 `./install-to-emmc.sh`
 * 如果显示挂载失败，重新执行上述安装命令`./install-to-emmc.sh`
 
-# N1在线升级方法
+# N1web在线升级方法
+* web在线快速升级，以此进入系统-晶晨宝盒-选择手动上传更新-上传最新下载的N1固件，最后点击升级openwrt固件即可
+* [升级方法](https://cdn.jsdelivr.net/gh/wxfyes/N1packaging/img/sj.png)
+# N1 ssh后台升级法（较麻烦）
 * cd /mnt/mmcblk2p4
-* wget 升级脚本下载.sh后缀文件 [点这里跳转](https://github.com/Netflixxp/N1HK1dabao/releases)
+* wget 升级脚本下载.sh后缀文件 [点这里跳转](https://github.com/wxfyes/N1packaging/releases)
 ![固件链接地址](https://cdn.jsdelivr.net/gh/Netflixxp/N1HK1dabao/img/zx.png)
 * wget .gz后缀名的固件链接,鼠标右击后缀.gz文件获取链接地址 [点这里跳转](https://github.com/Netflixxp/N1HK1dabao/releases)
 * gzip -d 上一步下载的固件全名
