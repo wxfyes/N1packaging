@@ -10,7 +10,7 @@ on:
       minimum_runs:
         description: 'The minimum runs to keep for each workflow.'
         required: true
-        default: 6
+        default: 24
   schedule:
     - cron: 0 23 * * *      
 env:
@@ -27,9 +27,9 @@ jobs:
       matrix:
         include:
           - flippy_name: 61+o
-            release_name: N1-jcnf-mini-61+o.img
+            release_name: N1-wangxiaodeng-61+o.img
           - flippy_name: 61+
-            release_name: N1-jcnf-mini-61+.img
+            release_name: N1-wangxiaofengi-61+.img
 
     env:
       FLIPPY_NAME: ${{ matrix.flippy_name }}   
@@ -40,7 +40,7 @@ jobs:
       
     - name: Initialization environment
       run: |     
-        version=$(curl -s "https://api.github.com/repos/Netflixxp/shangyou/releases/latest" | awk -F '"' '/tag_name/{print $4}')
+        version=$(curl -s "https://api.github.com/repos/wxfyes/N1openwrt/releases/latest" | awk -F '"' '/tag_name/{print $4}')
         
         echo "version=$version"  >> $GITHUB_ENV
         echo "DATE=$(date "+%Y-%m-%d %H:%M:%S")"  >> $GITHUB_ENV
@@ -52,7 +52,7 @@ jobs:
       run: |
         cd /opt/kernel
         
-        wget  https://github.com/Netflixxp/shangyou/releases/download/$version/openwrt-armvirt-64-default-rootfs.tar.gz
+        wget  https://github.com/wxfyes/N1openwrt/releases/download/$version/openwrt-armvirt-64-default-rootfs.tar.gz
                 
     - name: Check Files
       run: |
@@ -103,22 +103,15 @@ jobs:
       id: release
       uses: ncipollo/release-action@v1
       with:
-        name: ${{ env.DATE }} 🚀 N1/ hk1-Openwrt-img | 编译
+        name: ${{ env.DATE }} 🚀 N1-Openwrt-img | 编译
         allowUpdates: true
         tag: ${{ env.version }}
         commit: main
         token: ${{ secrets.RELEASES_TOKEN }}
         body: |
-          ## 以下为N1和HK1的最新固件（每日上午7时自动编译打包最新固件）
-          默认IP：192.168.1.99 默认密码： password
-          Openwrt🚀(注:此版本为jcnf个人的精简版。+o版内核更稳定)
-          N1和HK1在线升级方法：
-             1. cd /mnt/mmcblk2p4
-             2. wget 升级脚本链接,鼠标右击后缀.sh文件获取链接地址
-             3. wget img.gz后缀名的固件链接,鼠标右击后缀.img.gz文件获取链接地址
-             4. gzip -d 解压缩上一步下载的固件全名
-             5. chmod +x *.sh
-             6. ./升级脚本名字 img固件名
+          ## 以下为N1的最新固件（每日上午8时自动编译打包最新固件）
+          默认IP：192.168.1.1 默认密码： password
+          Openwr (注:此版本为王晓峰个人的精简版。+o版内核更稳定)
         artifacts: "/opt/kernel/tmp/*"   
 
     - name: Upload firmware to WeTransfer
@@ -136,10 +129,3 @@ jobs:
         delete_tags: true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  
-  over:
-    needs: [build]
-    runs-on: ubuntu-20.04
-    steps:
-    - name: TG notification #TG推送
-      run: curl "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" -d "chat_id=${{ secrets.TELEGRAM_CHAT_ID }}&text=N1159+0和N1159+打包成功"
