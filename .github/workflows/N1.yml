@@ -114,9 +114,9 @@ jobs:
           无线名称：Phicomm_n1 无线密码：password
           Openwrt (注:此版本为王晓峰个人的精简版。+o版内核更稳定)
           [博客查看更多内容](https://wxf2088.xyz)
-          [推荐vps服务器①-CN2GIA]（https://wxf2088.xyz/2499.html）
+          [推荐vps服务器①-CN2GIA](https://wxf2088.xyz/2499.html)
           [推荐vps服务器②-CMI](https://wxf2088.xyz/2905.html)
-          [推荐vps服务器③-美西]（https://wxf2088.xyz/1923.html）
+          [推荐vps服务器③-美西](https://wxf2088.xyz/1923.html)
           [高配便宜vps-普通线路](https://wxf2088.xyz/1521.html)
         artifacts: "/opt/kernel/tmp/*"   
 
