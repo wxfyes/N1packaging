@@ -92,7 +92,7 @@
   dd   if=/dev/zero   of=/dev/mmcblk2  bs=512  count=1  &&  sync
 ```
 
-# [购买奈飞正规合租车](https://wxf2088.ml/Netfix)
+# [购买奈飞正规合租车](https://wxf2088.ml:8443/Netfix)
 
 # 感谢
  * [flippy](https://github.com/unifreq)提供内核
