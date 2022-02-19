@@ -1,4 +1,4 @@
-name: Build N1 69+o and 69+
+name: Build N1 70+o and 70+
 on:
   repository_dispatch:
   workflow_dispatch:
@@ -26,10 +26,10 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - flippy_name: 69+o
-            release_name: N1-wangxiaofeng-69+o.img
-          - flippy_name: 69+
-            release_name: N1-wangxiaofeng-69+.img
+          - flippy_name: 70+o
+            release_name: N1-wangxiaofeng-70+o.img
+          - flippy_name: 70+
+            release_name: N1-wangxiaofeng-70+.img
 
     env:
       FLIPPY_NAME: ${{ matrix.flippy_name }}   
